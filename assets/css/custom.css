@@ -42,7 +42,7 @@ a{text-decoration: none;}
 .navmenu .nav-item a{color: #272524;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px;text-transform: uppercase; padding-right: 50px; display: block; }
 .navmenu .nav-item a.active{font-weight: 600;}
 
-
+.contact-button .btn{border: 0px; color: #272524;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px;text-transform: uppercase;}
 
 
 /*=== Header ===*/
