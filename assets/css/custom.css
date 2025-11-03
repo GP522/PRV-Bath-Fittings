@@ -132,41 +132,61 @@ a{text-decoration: none;}
 
 
 
-
-
-
-
 /* --- HERO SECTION --- */
 .hero-section {position: relative;background: url('../images/hydration-banner.svg');overflow: hidden;background-position: center; background-size: cover; background-repeat: no-repeat; padding: 360px 0px 80px;}
 .hero-content {text-align: center;position: relative;z-index: 2;}
-.hero-content h2 {color: #272524;text-align: center;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: 70px;letter-spacing: -2.25px;display: flex;
-    align-items: center;justify-content: center;gap: 120px;}
+.hero-content h2 {color: #272524;text-align: center;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: 70px;letter-spacing: -2.25px;display: flex;align-items: center;justify-content: center;gap: 120px;}
 .hero-content h2 span {font-style: italic; position: relative; left: 80px;}
-
 .shop-btn .btn{border-radius: 4px;background: var(--Seafoam-Mist, #C3E2D9);color:  #272524;text-align: center;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;padding: 14px 50px;}
 .shop-btn .btn:hover {background-color: #98d4c1;}
 .bottom-text{position: relative; margin-top:20%;}
-
 .available-text {color: #272524;text-align: center;font-size: 18px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase; margin-top: 40px;}
 .amazon-logo {width: 60px;vertical-align: middle;margin-left: 5px;}
 
 
+/*----experience-section-----*/
+.experience-section{background-image: url('../images/Experience-banner.svg');background-position: center; background-size: cover; background-repeat: no-repeat; padding:190px 0px; }
+.hd-exper h3{color:#fff;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: normal;letter-spacing: -2.25px; margin-bottom: 20px;}
+.hd-exper h3 span{font-style: italic;}
+.hd-exper p{color:#fff;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;max-width: 466px; margin-bottom: 30px;}
+.hd-exper a{color:#fff;font-size: 14px;font-weight: 600;line-height: normal;text-transform: uppercase;}
+.hd-exper a i{margin-left: 10px;}
 
 
 
+/* Section Wrapper */
+.intro-wrapper {width: 100%;background-color: #fff;padding: 100px 0px; position: relative;}
+.intro-heading{position: relative;}
+.intro-heading h1{color:#272524;font-family: "Beaufort Pro";font-size: 220px;font-weight: 400;line-height: 160px;letter-spacing: -7.2px;}
+.intro-heading em {font-style: italic;}
+.intro-heading h1 span{display: block; text-align:right; font-size:210px;}
+.intro-heading p{color:#272524;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px; max-width: 332px; position: absolute; top:38%;}
+/* Button */
+.enqure-btn{text-align: center; margin-top: 80px;}
+.enqure-btn .btn{border-radius: 4px;color:#272524;font-size: 14px;font-weight: 500;line-height: normal;text-transform: uppercase;border: 1px solid #272524;transition: all 0.3s ease; padding: 20px 46px;}
 
 
 
+/*====follow-wrapper======*/
+.follow-wrapper{background: #F4F2F0; padding: 100px 0px; position: relative; overflow: hidden;}
+.follow-wrapper h4{color: #272524;text-align: center;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}
+.follow-wrapper h4 span{font-weight: 600;}
+.follow-grid{display: grid; grid-template-columns: repeat(4 ,1fr); gap: 20px 20px;}
+.follow-card{position: relative; overflow: hidden; margin-top: 30px;}
+.follow-card img{width: 100%;}
 
 
+/* Footer Base */
+.footer-section {background-color: #1d1b1b;color: #fff;padding: 100px 0px;}
+.footer-werap {display: flex;justify-content: space-between;align-items: flex-start;flex-wrap: wrap;}
+.footer-links {display: flex;gap: 60px;}
+.footer-column {display: flex;flex-direction: column;gap: 10px;}
+.footer-column a {color:#F4F2F0;font-size: 14px;font-weight: 400;line-height: 40px;letter-spacing: -0.42px;text-transform: uppercase;}
+.footer-column a:hover {color: #ffffff;}
+.footer-icons {display: flex;gap: 30px; margin-bottom: 80px; justify-content: end;}
+.footer-icons p {color:#F4F2F0;font-size: 14px;font-weight: 400;line-height: 40px;letter-spacing: -0.42px;text-transform: uppercase;}
 
 
-
-
-
-
-
-
-
-
-
+.copyright{position: relative; background: #C3E2D9; padding: 200px 0px;}
+.brand-logo{float: left;}
+.copyright p{color:#272524;text-align: center;font-family: "Beaufort Pro";font-size: 30px;font-weight: 400;line-height: normal;letter-spacing: -0.9px; margin: 0px;}

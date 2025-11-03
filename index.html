@@ -266,7 +266,6 @@
   </div>
 
 
-
   <div class="hero-section">
     <div class="container">
       <div class="hero-content">
@@ -287,6 +286,109 @@
   </div><!--hero-section-->
 
 
+  <div class="experience-section">
+    <div class="container">
+      <div class="hd-exper">
+        <h3>Experience PRV <br> <span>Coming Soon</span></h3>
+        <p>Our upcoming Experience Store will let you see, touch, and feel every PRV creation. from faucets to showers,
+          in an immersive setting that celebrates water, craft, and innovation.</p>
+        <a href="#">stay updated <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div><!---experience-section-->
+
+
+  <div class="intro-wrapper">
+    <div class="container">
+      <div class="intro-heading">
+        <h1>
+          Bring PRV <em>to</em> <span>your space</span>
+        </h1>
+        <p>
+          Explore our collections, request a catalogue, or connect with our team to discuss your next project.
+        </p>
+        <div class="enqure-btn">
+          <a href="#" class="btn">ENQUIRE NOW</a>
+        </div>
+      </div>
+    </div>
+  </div><!----intro-wrapper-->
+
+
+  <div class="follow-wrapper">
+    <div class="container">
+      <h4>Follow <span>@prv.bath</span> on Instagram</h4>
+      <div class="follow-grid">
+        <div class="follow-card">
+          <img src="./assets/images/Follow-img1.svg" alt="">
+        </div>
+        <div class="follow-card">
+          <img src="./assets/images/Follow-img2.svg" alt="">
+        </div>
+        <div class="follow-card">
+          <img src="./assets/images/Follow-img3.svg" alt="">
+        </div>
+        <div class="follow-card">
+          <img src="./assets/images/Follow-img4.svg" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+  </div><!--follow-wrapper-->
+
+
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-werap">
+          <!-- Left Links -->
+          <div class="footer-links">
+            <div class="footer-column">
+              <a href="#">OUR COMPANY</a>
+              <a href="#">COLLECTION</a>
+              <a href="#">CONTACT US</a>
+              <a href="#">BLOGS</a>
+            </div>
+            <div class="footer-column">
+              <a href="#">FAQS</a>
+              <a href="#">TERMS & CONDITIONS</a>
+              <a href="#">PRIVACY POLICY</a>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="footer-right">
+            <div class="footer-icons">
+              <a href="#"><img src="./assets/images/linkedin.svg" alt="LinkedIn"></a>
+              <a href="#"><img src="./assets/images/facebook.svg" alt="Facebook"></a>
+              <a href="#"><img src="./assets/images/youtube.svg" alt="YouTube"></a>
+              <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram"></a>
+              <a href="#"><img src="./assets/images/close.svg" alt="Close"></a>
+            </div>
+            <p>© 2025 PRV INDUSTRIES. ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div><!--footer-section-->
+
+    <div class="copyright">
+      <div class="container">
+        <div class="brand-logo">
+          <a href="#"><img src="./assets/images/PVR-logo.svg" alt=""></a>
+        </div>
+        <div class="brand-text">
+          <p>Inspired by You. Perfected by Design.</p>
+        </div>
+      </div>
+    </div><!---copyright-->
+  </footer>
+
+
+
+
+
 
 
   <script src="./assets/js/jquery-3.6.3.js"></script>
@@ -296,71 +398,71 @@
 
 
   <script>
-  const slider = document.querySelector(".slider");
-  const slides = document.querySelectorAll(".slideitem");
-  const nextBtn = document.querySelector(".next");
-  const prevBtn = document.querySelector(".prev");
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slideitem");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
 
-  let index = 0;
-  let visibleSlides = getVisibleSlides();
-  const totalSlides = slides.length;
+    let index = 0;
+    let visibleSlides = getVisibleSlides();
+    const totalSlides = slides.length;
 
-  // ✅ Adjust number of visible slides based on screen width
-  function getVisibleSlides() {
-    if (window.innerWidth < 600) return 1;
-    if (window.innerWidth < 960) return 2;
-    return 3;
-  }
+    // ✅ Adjust number of visible slides based on screen width
+    function getVisibleSlides() {
+      if (window.innerWidth < 600) return 1;
+      if (window.innerWidth < 960) return 2;
+      return 3;
+    }
 
-  // ✅ Update slider position and active state
-  function updateSlider() {
-    slides.forEach(slideitem => slideitem.classList.remove("active"));
-    const offset = index * (100 / visibleSlides);
-    slider.style.transform = `translateX(-${offset}%)`;
+    // ✅ Update slider position and active state
+    function updateSlider() {
+      slides.forEach(slideitem => slideitem.classList.remove("active"));
+      const offset = index * (100 / visibleSlides);
+      slider.style.transform = `translateX(-${offset}%)`;
 
-    // Highlight the center slide
-    const centerIndex = index + Math.floor(visibleSlides / 2);
-    if (slides[centerIndex]) slides[centerIndex].classList.add("active");
-  }
+      // Highlight the center slide
+      const centerIndex = index + Math.floor(visibleSlides / 2);
+      if (slides[centerIndex]) slides[centerIndex].classList.add("active");
+    }
 
-  // ✅ Next / Prev Navigation
-  function nextSlide() {
-    index = (index + 1) % (totalSlides - visibleSlides + 1);
+    // ✅ Next / Prev Navigation
+    function nextSlide() {
+      index = (index + 1) % (totalSlides - visibleSlides + 1);
+      updateSlider();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + (totalSlides - visibleSlides + 1)) % (totalSlides - visibleSlides + 1);
+      updateSlider();
+    }
+
+    nextBtn.addEventListener("click", () => {
+      nextSlide();
+      resetAutoplay();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      prevSlide();
+      resetAutoplay();
+    });
+
+    // ✅ Autoplay (every 4 seconds)
+    let autoplay = setInterval(nextSlide, 4000);
+
+    function resetAutoplay() {
+      clearInterval(autoplay);
+      autoplay = setInterval(nextSlide, 4000);
+    }
+
+    // ✅ Update on resize
+    window.addEventListener("resize", () => {
+      visibleSlides = getVisibleSlides();
+      if (index > totalSlides - visibleSlides) index = 0;
+      updateSlider();
+    });
+
     updateSlider();
-  }
-
-  function prevSlide() {
-    index = (index - 1 + (totalSlides - visibleSlides + 1)) % (totalSlides - visibleSlides + 1);
-    updateSlider();
-  }
-
-  nextBtn.addEventListener("click", () => {
-    nextSlide();
-    resetAutoplay();
-  });
-
-  prevBtn.addEventListener("click", () => {
-    prevSlide();
-    resetAutoplay();
-  });
-
-  // ✅ Autoplay (every 4 seconds)
-  let autoplay = setInterval(nextSlide, 4000);
-
-  function resetAutoplay() {
-    clearInterval(autoplay);
-    autoplay = setInterval(nextSlide, 4000);
-  }
-
-  // ✅ Update on resize
-  window.addEventListener("resize", () => {
-    visibleSlides = getVisibleSlides();
-    if (index > totalSlides - visibleSlides) index = 0;
-    updateSlider();
-  });
-
-  updateSlider();
-</script>
+  </script>
 
 
 

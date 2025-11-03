@@ -54,6 +54,22 @@
 
 
 
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
 }
 
 
