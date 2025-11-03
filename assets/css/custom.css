@@ -1,0 +1,172 @@
+@font-face {font-family:FontAwesome;src:url(../fonts/FontAwesome.otf);}
+/* @font-face {font-family:Nohemi-Regular;src:url(../fonts/Nohemi-Regular.otf);}
+@font-face {font-family:Nohemi-Medium;src:url(../fonts/Nohemi-Medium.otf);}
+@font-face {font-family:Nohemi-Bold;src:url(../fonts/Nohemi-Bold.otf);}
+@font-face {font-family:Nohemi-SemiBold;src:url(../fonts/Nohemi-SemiBold.otf);}
+@font-face {font-family:Nohemi-Light;src:url(../fonts/Nohemi-Light.otf);}
+@font-face {font-family:Nohemi-ExtraLight;src:url(../fonts/Nohemi-ExtraLight.otf);} */
+
+
+body{font-family: "sweet-sans-pro"; color:#353332;font-size: 14px;}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {position: relative;}
+img {max-width: 100%;}
+ul{list-style: none; padding: 0px; margin: 0px;}
+a{text-decoration: none;}
+
+.navbar-nav{align-items: center;}
+/*=== Header ===*/
+.home-header { position:relative;z-index: 2;width: 100%; padding: 10px 0px; }
+
+.navbar-dark{padding: 0px;}
+.navbar-expand-lg .navbar-collapse {justify-content: space-between;}
+.pvrlogo {position: relative;padding-left: 120px;}
+
+
+.navbar-toggler {padding: 0; border: none;  border-radius: 30px;width: 36px; height: 36px; position: relative;}
+.menu-icon {display: flex; flex-direction: column; justify-content: space-between;cursor: pointer; transition: 0.3s ease-in-out;}
+.navicon,
+.navicon:before,
+.navicon:after {background: #00da5b; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
+.navicon { position: relative; margin: auto; }
+.navicon:before { content: ''; top: -8px; }
+.navicon:after { content: ''; top: 8px; }
+.navbar-toggler[aria-expanded="true"] .navicon { background: transparent; }
+.navbar-toggler[aria-expanded="true"] .navicon:before { transform: rotate(45deg); top: 0; }
+.navbar-toggler[aria-expanded="true"] .navicon:after { transform: rotate(-45deg); top: 0; }
+.navbar-toggler:focus { box-shadow: none; }
+
+.navmenu li { position: relative; }
+.navmenu > ul > li:last-child { padding-right: 0; }
+.navmenu .nav-item a{color: #272524;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px;text-transform: uppercase; padding-right: 50px; display: block; }
+.navmenu .nav-item a.active{font-weight: 600;}
+
+
+
+
+/*=== Header ===*/
+
+
+/*=== homebanner ===*/
+.homebanner{background-image: url('../images/Home-banner.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; padding: 240px 0px 120px;} 
+
+
+.home-hd h1{color: #FFF;text-align: center;font-family: "Beaufort Pro";font-size: 75px;font-weight: 300;line-height: normal;letter-spacing: -2.25px;}
+.home-hd h1 span{font-style: italic;}
+.homebtn .btn{border-radius: 70px;background: #272524;box-shadow: 5px 4px 35.2px 5px rgba(0, 0, 0, 0.25); color:#FFF;font-size: 14px;font-weight: 500;line-height: 19px;letter-spacing: -0.42px;text-transform: uppercase; padding:14px 40px; display: inline-flex;
+    align-items: center;gap: 0px 10px;}
+.homebtn {position: relative;text-align: center;margin-top: 16%;}
+
+
+/*----category-section-----*/
+.category-section {position: relative;overflow: hidden;}
+.category-grid {display: grid;grid-template-columns: repeat(3, 1fr);border-top: 1px solid #CDC8C1;border-left: 1px solid #CDC8C1;}
+.category-box1,
+.category-box2,
+.category-box3 {display: flex;flex-direction: column;}
+.category-item {flex: 1;border-right: 1px solid #CDC8C1;border-bottom: 1px solid #CDC8C1;padding: 40px 20px;background: #fff;position: relative;transition: all 0.3s ease;display: flex;flex-direction: column;justify-content:end;}
+.category-img {text-align: center;}
+.category-item img {height: auto;margin: 0 auto;transition: transform 0.3s ease;}
+.category-item p {color: #272524;font-size: 16px;font-weight: 400;text-transform: uppercase;letter-spacing: -0.54px;line-height: normal;margin-top: 15px;}
+.category-box1 p {text-align: right;}
+.category-box2 p {text-align: left;}
+.category-box3 p {text-align: left;}
+.category-item:hover {background: #f9f9f9;}
+.category-item:hover img {transform: scale(1.05);}
+
+
+/*===precision-section======*/
+.precision-section{position: relative; padding: 100px 0px; background: #272524; overflow: hidden;}
+.realized-hd h2{color:#C3E2D9;text-align: center;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}
+
+.crafted-container {display: grid;grid-template-columns: 2fr 1.2fr;align-items: center;gap: 40px; margin: 90px 0px 120px 0px;}
+.crafted-left {display: flex;flex-direction: column;justify-content: flex-end;}
+.precision-image img {width: 100%;height: auto;border-radius: 4px;margin-bottom: 20px;}
+.precision-text h3 {color: #FFF;font-size: 24px;font-weight: 500;line-height: normal;letter-spacing: -0.72px;text-transform: uppercase; margin-bottom: 10px;}
+.precision-text p {color: #FFF;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;max-width: 430px;}
+
+.engineered{background-image: url('../images/Elegance-engineered.svg'); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 300px 60px 70px 60px;}
+.quiettext h3{color: #FFF;text-align: right;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}
+.quiettext p{ color: #FFF;text-align: right;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px; max-width: 551px; margin-left: auto;}
+.quiettext h3 span{font-style: italic;}
+
+
+/*=====products-section=====*/
+.products-section{padding: 100px 0px; position: relative; overflow: hidden;}
+.products-section h3{color:#272524;text-align: center;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}
+
+
+.slider-container {position: relative;margin: 0 auto;overflow: hidden;}
+.slider {display: flex;gap: 40px;transition: transform 0.6s ease; align-items: center;}
+.slideitem {flex: 0 0 calc(33.333% - 30px);text-align: center;opacity: 0.5;transform: scale(0.9);filter: blur(2px);transition: all 0.5s ease;}
+
+.slideitem.active {opacity: 1;transform: scale(1);filter: blur(0);}
+.slideitem.active .product-werap{opacity: 1;}
+.product-img {min-height: 420px; display: flex; align-items: center; justify-content: center;}
+.product-img img{width: 100%;max-width: 280px;height: auto;}
+
+.product-werap {text-align: center;opacity: 0;transition: all 0.5s ease;}
+.product-werap h5{color:#272524;text-align: center;font-size: 18px;font-weight: 600;line-height: normal;letter-spacing: -0.54px;text-transform: uppercase;}
+.product-werap p{color:#272524;text-align: center;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;max-width: 275px; margin: 0 auto 30px;}
+.controlarrow .arrow {background: none;border: none;cursor: pointer;transition: color 0.3s ease;position: absolute;top: 50%;transform: translateY(-50%);z-index: 5;}
+.arrow:hover {color: #272524;}
+.controlarrow .prev {left:10%}
+.controlarrow .next {right: 10%;}
+
+
+
+/* Responsive */
+@media (max-width: 960px) {
+  .slideitem {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .slideitem {
+    flex: 0 0 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* --- HERO SECTION --- */
+.hero-section {position: relative;background: url('../images/hydration-banner.svg');overflow: hidden;background-position: center; background-size: cover; background-repeat: no-repeat; padding: 360px 0px 80px;}
+.hero-content {text-align: center;position: relative;z-index: 2;}
+.hero-content h2 {color: #272524;text-align: center;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: 70px;letter-spacing: -2.25px;display: flex;
+    align-items: center;justify-content: center;gap: 120px;}
+.hero-content h2 span {font-style: italic; position: relative; left: 80px;}
+
+.shop-btn .btn{border-radius: 4px;background: var(--Seafoam-Mist, #C3E2D9);color:  #272524;text-align: center;font-size: 14px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase;padding: 14px 50px;}
+.shop-btn .btn:hover {background-color: #98d4c1;}
+.bottom-text{position: relative; margin-top:20%;}
+
+.available-text {color: #272524;text-align: center;font-size: 18px;font-style: normal;font-weight: 600;line-height: normal;text-transform: uppercase; margin-top: 40px;}
+.amazon-logo {width: 60px;vertical-align: middle;margin-left: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
