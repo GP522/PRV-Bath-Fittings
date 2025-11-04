@@ -243,3 +243,23 @@ a{text-decoration: none;}
 .expect-section .owl-theme .owl-controls .owl-nav div{height: 0px !important;}
 .expect-section .owl-prev:before {content: '';background-image: url(../images/left-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;left: 0px; width:22px;height: 22px;background-size: 22px; filter: invert(1);}
 .expect-section .owl-next:before {content: '';background-image: url(../images/right-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;right: 0px; width:22px;height: 22px;background-size: 22px;filter: invert(1);}
+
+
+/*----contact-pages-----*/
+.contact-pages{position: relative; overflow: hidden;}
+.contact-section{position: relative; overflow: hidden; padding: 100px 0px;}
+.get-contact h3{color:#272524;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: normal;letter-spacing: -2.25px;}
+.get-contact p{color:#272524;font-size: 24px;font-weight: 400;line-height: normal;letter-spacing: -0.72px;margin-bottom: 40px;font-family: "Beaufort Pro";max-width: 547px;}
+.get-contact h5{color:#272524;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;text-transform: uppercase; }
+.get-contact p a{color:#272524;}
+
+.contact-form{position: relative;padding-left: 20px;}
+.contact-form label{color:#272524;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px;text-transform: uppercase; margin-bottom: 8px;}
+.contact-form .form-control{border-radius: 4px;background: #F6F6F6;color:#272524;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px; height: 60px; border: 0px; margin-bottom: 30px;}
+.contact-form textarea.form-control {min-height: 160px; margin-bottom: 50px;}
+textarea {resize: none;}
+
+.map-link a{color:#272524;font-family: "Beaufort Pro";font-size: 14px;font-weight: 500;line-height: normal;text-transform: uppercase; margin-bottom: 30px; display: block;}
+.map-link a img{margin-left: 12px;}
+
+.intro-wrapper.bgcolor{background: #F5F5F5;}
