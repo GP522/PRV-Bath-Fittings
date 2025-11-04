@@ -18,7 +18,7 @@ a{text-decoration: none;}
 .navbar-nav{align-items: center;}
 /*=== Header ===*/
 .home-header { position:relative;z-index: 2;width: 100%; padding: 10px 0px; }
-
+.inner-header{background:#F4F2F0;}
 .navbar-dark{padding: 0px;}
 .navbar-expand-lg .navbar-collapse {justify-content: space-between;}
 .pvrlogo {position: relative;padding-left: 120px;}
@@ -28,7 +28,7 @@ a{text-decoration: none;}
 .menu-icon {display: flex; flex-direction: column; justify-content: space-between;cursor: pointer; transition: 0.3s ease-in-out;}
 .navicon,
 .navicon:before,
-.navicon:after {background: #00da5b; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
+.navicon:after {background: #272524; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
 .navicon { position: relative; margin: auto; }
 .navicon:before { content: ''; top: -8px; }
 .navicon:after { content: ''; top: 8px; }
@@ -176,6 +176,14 @@ a{text-decoration: none;}
 .follow-card img{width: 100%;}
 
 
+.mobilesilder{display: none;}
+.mobilesilder .owl-theme .owl-controls .owl-nav div{height: 0px !important;}
+.owl-theme .owl-controls .owl-nav .disabled{opacity: 100% !important;}
+.mobilesilder .owl-prev:before {content: '';background-image: url(../images/left-nav.svg);background-repeat: no-repeat;position: absolute;bottom: -12%;right: 12%;left: 0px; width:22px;height: 22px;background-size: 22px; margin: 0 auto;}
+.mobilesilder .owl-next:before {content: '';background-image: url(../images/right-nav.svg);background-repeat: no-repeat;position: absolute;bottom: -12%;left: 12%;right: 0px; width:22px;height: 22px;background-size: 22px;margin: 0 auto;}
+
+
+
 /* Footer Base */
 .footer-section {background-color: #1d1b1b;color: #fff;padding: 100px 0px;}
 .footer-werap {display: flex;justify-content: space-between;align-items: flex-start;flex-wrap: wrap;}
@@ -190,3 +198,48 @@ a{text-decoration: none;}
 .copyright{position: relative; background: #C3E2D9; padding: 200px 0px;}
 .brand-logo{float: left;}
 .copyright p{color:#272524;text-align: center;font-family: "Beaufort Pro";font-size: 30px;font-weight: 400;line-height: normal;letter-spacing: -0.9px; margin: 0px;}
+
+
+
+/* About page Base */
+
+.about-pages{position: relative; padding: 150px 0px 90px 0px; overflow: hidden;}
+.about-hd{display: flex; gap: 60px; justify-content: center;}
+.about-hd h2{color:#272524;font-family: "Beaufort Pro";font-size: 75px;font-weight: 500;line-height: normal;letter-spacing: -2.25px;}
+.about-hd p{color:#272524;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px; max-width: 620px;}
+
+.shower-banner{position: relative; overflow: hidden;}
+.shower-banner img{width: 100%;}
+
+.vision-section{padding: 100px 0px; background: #C3E2D9; position: relative; overflow: hidden;}
+.vision-section h4{color:#272524;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px; margin-bottom: 50px;}
+.our-hd p{color:#272524;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;max-width: 527px;}
+.visionimg{padding-left: 30px;}
+.visionimg img{width: 100%;}
+
+.leadership{margin-top: 60px;}
+.leadership .row{gap: 0px 60px;}
+.teamwerap img{width: 100%; margin-bottom: 20px;}
+.teamwerap h5{color:#272524;font-size: 16px;font-weight: 700;line-height: normal;letter-spacing: -0.48px;text-transform: uppercase;}
+.teamwerap span{color:#5D5D5D;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px;}
+
+.about-prv {padding: 100px 0px; position: relative; overflow: hidden;}
+.about-text {position: relative;}
+.about-text h2 {color:#272524;font-family: "Beaufort Pro";font-size:44px;font-weight: 500;line-height: normal;letter-spacing: -1.5px; margin-bottom: 15px;}
+.about-text p {color:#272524;font-size: 15px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;}
+.about-layer {display: grid;grid-template-columns: repeat(4, 1fr);gap:0px 20px;}
+.about-images img {width: 100%;height: auto;object-fit: cover;transition: transform 0.4s ease;}
+.about-images img:hover {transform: scale(1.03);}
+
+
+.expect-section{position: relative; padding: 160px 0px; background: #272524;}
+.expect-text{max-width: 810px; margin: 0 auto;}
+.expect-text h4{color:#C3E2D9;text-align: center;font-family: "Beaufort Pro";font-size: 40px;font-weight: 400;line-height: normal;letter-spacing: -1.2px; margin-bottom: 30px;}
+.expect-text h6{color:#F4F2F0;text-align: center;font-size: 16px;font-weight: 400;line-height: normal;letter-spacing: -0.48px;text-transform: uppercase;}
+.expect-text span{display: block;color: #7A7A7A;font-size: 14px;font-weight: 400;line-height: normal;letter-spacing: -0.42px; text-align: center;}
+
+.expect-section::after{content: ''; position: absolute; top: 0px; right: 0px; width:330px; height:320px; background-image: url('../images/about/frame-bg.svg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.expect-section .owl-theme .owl-controls .owl-nav div{height: 0px !important;}
+.expect-section .owl-prev:before {content: '';background-image: url(../images/left-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;left: 0px; width:22px;height: 22px;background-size: 22px; filter: invert(1);}
+.expect-section .owl-next:before {content: '';background-image: url(../images/right-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;right: 0px; width:22px;height: 22px;background-size: 22px;filter: invert(1);}

@@ -44,14 +44,14 @@
 
 
 @media (max-width:991.8px) {
-.header-menu{margin: 0px 20px; padding: 6px 0px;}
 .navbar-toggler{top: 0px; right: 15px;}
-.header-menu a.navbar-brand img{padding-left:15px;}
 .navbar-collapse {position: absolute;top: 100%;width: 100%;left: 0px;z-index: 9999;border-radius:21px;background:#fbfbfb; padding: 30px 30px; margin-top:12px;}
 .navmenu .nav-item a {font-size: 18px;padding: 0px 0px;}
 .navmenu li{margin-bottom: 30px;}
 .navbar-nav {align-items: normal;}
-
+.mobile {
+    display: block;
+}
 
 
 .footer-container {
@@ -69,6 +69,9 @@
   .footer-right {
     align-items: center;
   }
+
+.desktop{display: none;}
+.mobilesilder{display: block;}
 
 }
 

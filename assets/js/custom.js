@@ -32,8 +32,8 @@
 
 
 //========home page=========
-var blogslider = $('.blogslider');
-blogslider.owlCarousel({
+var slider1 = $('.slider1');
+slider1.owlCarousel({
   loop: true,
   nav: true,
   dots: false,
@@ -53,8 +53,11 @@ blogslider.owlCarousel({
 
 
 //========about page=========
-var valuesilder = $('.valuesilder');
-valuesilder.owlCarousel({
+
+
+
+var slider2 = $('.slider2');
+slider2.owlCarousel({
   loop: true,
   nav: true,
   dots: false,
@@ -63,94 +66,11 @@ valuesilder.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1.2 },
-    480: { items: 1.2 },
-    600: { items: 2.1 },
-    960: { items: 3.2 },
-    1200: { items: 4.5 }
-
-  }
-});
-
-
-var technicalslider = $('.technicalslider');
-technicalslider.owlCarousel({
-  loop: true,
-  nav: false,
-  dots: true,
-  smartSpeed: 450,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  margin: 20,
-  responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 1 },
-    960: { items: 1 },
-    1200: { items: 1 }
-
-  }
-});
-
-
-var technicalslider = $('.technicalslider');
-technicalslider.owlCarousel({
-  loop: true,
-  nav: false,
-  dots: true,
-  smartSpeed: 450,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  margin: 20,
-  responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 1 },
-    960: { items: 1 },
-    1200: { items: 1 }
-
-  }
-});
-
-
-
-
-
-var SSMmachinesilder = $('.SSMmachinesilder');
-SSMmachinesilder.owlCarousel({
-  loop: true,
-  nav: false,
-  dots: true,
-  smartSpeed: 450,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  margin: 20,
-  responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 1 },
-    960: { items: 1 },
-    1200: { items: 1 }
-
-  }
-});
-
-
-var precisionslider = $('.precisionslider');
-precisionslider.owlCarousel({
-  loop: true,
-  nav: true,
-  dots: false,
-  smartSpeed: 450,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  margin: 20,
-  responsive: {
-    320: { items: 1.2},
-    480: { items: 1.2},
-    600: { items: 2.2},
-    960: { items: 2.2 },
-    1200: { items: 3.5 }
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 1},
+    960: { items: 1},
+    1200: { items: 1}
 
   }
 });
