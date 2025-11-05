@@ -73,6 +73,22 @@
 .desktop{display: none;}
 .mobilesilder{display: block;}
 
+
+ .story-item {
+    flex-direction: column;
+    text-align: left;
+  }
+  .story-img img {
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
 }
 
 
