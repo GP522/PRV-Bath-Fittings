@@ -97,6 +97,23 @@ slider3.owlCarousel({
 
 
 
+var slider4 = $('.slider4');
+slider4.owlCarousel({
+  loop: true,
+  nav: true,
+  dots: true,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 1},
+    960: { items: 1},
+    1200: { items: 1}
 
+  }
+});
 
 
