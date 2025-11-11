@@ -28,7 +28,7 @@ a{text-decoration: none;}
 .menu-icon {display: flex; flex-direction: column; justify-content: space-between;cursor: pointer; transition: 0.3s ease-in-out;}
 .navicon,
 .navicon:before,
-.navicon:after {background: #272524; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
+.navicon:after {background: #272524; height: 2px; width: 40px;position: absolute; left: 0; transition: 0.3s;}
 .navicon { position: relative; margin: auto; }
 .navicon:before { content: ''; top: -8px; }
 .navicon:after { content: ''; top: 8px; }
@@ -123,7 +123,7 @@ a{text-decoration: none;}
 
 
 /* --- HERO SECTION --- */
-.hero-section {position: relative;background: url('../images/hydration-banner.svg');overflow: hidden;background-position: center; background-size: cover; background-repeat: no-repeat; padding: 360px 0px 80px;}
+.hero-section {position: relative;background: url('../images/hydration-banner.svg');overflow: hidden;background-position: center !important; background-size: cover !important; background-repeat: no-repeat; padding: 360px 0px 80px;}
 .hero-content {text-align: center;position: relative;z-index: 2;}
 .hero-content h2 {color: #272524;text-align: center;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: 70px;letter-spacing: -2.25px;display: flex;align-items: center;justify-content: center;gap: 120px;}
 .hero-content h2 span {font-style: italic; position: relative; left: 80px;}
@@ -225,6 +225,21 @@ a{text-decoration: none;}
 .expect-section .owl-theme .owl-controls .owl-nav div{height: 0px !important;}
 .expect-section .owl-prev:before {content: '';background-image: url(../images/left-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;left: 0px; width:22px;height: 22px;background-size: 22px; filter: invert(1);}
 .expect-section .owl-next:before {content: '';background-image: url(../images/right-nav.svg);background-repeat: no-repeat;position: absolute;top:35%;right: 0px; width:22px;height: 22px;background-size: 22px;filter: invert(1);}
+
+
+
+
+.expect-section .owl-dots {position: absolute;bottom:-12%;left: 0px;right: 0px;text-align: center;opacity: 0;}
+.expect-section .owl-theme .owl-dots .owl-dot span {border-radius: 2.454px;background: #484644;width: 12px;height: 6px;}
+.expect-section .owl-theme .owl-dots .owl-dot.active span{background: #C3E2D9; width: 32px;}
+
+
+
+
+
+
+
+
 
 
 /*----contact-pages-----*/
@@ -346,6 +361,9 @@ text-transform: uppercase;}
 .productsilder .owl-dots {position: absolute;bottom:4%;left: 0px;right: 0px;text-align: center;}
 .productsilder .owl-theme .owl-dots .owl-dot span {border-radius: 2.454px;background: #EEE;width: 12px;height: 6px;}
 .productsilder .owl-theme .owl-dots .owl-dot.active span{background: #C3E2D9; width: 32px;}
+
+
+
 
 .productsilder{border: 1px solid #CDC8C1;background: #FDFDFD; padding: 40px 40px; text-align: center; margin-right: 30px;}
 .softtext h3{color:#272524;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}

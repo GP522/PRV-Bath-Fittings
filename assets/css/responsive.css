@@ -51,6 +51,19 @@
 .navbar-nav {align-items: normal;}
 .contact-button .btn{font-size: 18px; padding: 0px;}
 
+.home-header img{filter: brightness(0) invert(1);}
+.home-header{position: fixed; top: 0px; left: 0px; z-index: 999;}
+.home-header.fixed{background: #C3E2D9; box-shadow: 0px 0px 10px #ccc;}
+.home-header.fixed img {filter: inherit;}
+.home-header .navicon, .navicon:before, .navicon:after{background: #fff;}
+.home-header.fixed .navicon{background: #272524;}
+.home-header.fixed .navicon:after{background: #272524;}
+.home-header.fixed .navicon:before{background: #272524;}
+
+.inner-header img{filter: inherit;}
+.inner-header.home-header .navicon, .navicon:before, .navicon:after{background: #272524;}
+
+
 
 .homebanner{padding: 110px 0px;}
 .home-hd h1{font-size: 50px;}
@@ -62,7 +75,6 @@
 .crafted-right{margin-bottom: 40px;}
 .products-section{padding: 40px 0px 60px 0px;}
 .products-section h3{font-size: 40px;}
-
 
 .slideitem {flex: 0 0 calc(40% - 40px);}
 .product-werap h5{font-size: 16px;}
@@ -89,29 +101,22 @@
 .copyright{height: 450px;}
 
 
-
-
-
-
-
 .mobile {display: block;}
-
-
-
 .desktop{display: none;}
 .mobilesilder{display: block;}
+ .story-item {flex-direction: column;text-align: left;}
+.story-img img {max-width: 100%;}
 
+.about-hd h2{font-size:50px;line-height: normal;letter-spacing: -1.02px;}
+.about-hd{gap: 0px;}
+.vision-section{padding: 40px 0px;}
+.vision-section h4{margin-bottom: 20px;}
+.visionimg{padding-left: 0px; margin-top: 20px;}
+.leadership {margin-top: 40px;}
+.leadership .row{gap: 30px 20px;}
+.about-prv{padding: 40px 0px;}
 
- .story-item {
-    flex-direction: column;
-    text-align: left;
-  }
-  .story-img img {
-    max-width: 100%;
-  }
-
-
-
+.about-layer {grid-template-columns: repeat(2, 1fr);}
 
 
 
@@ -125,6 +130,13 @@
 
 
 @media (max-width:767.8px) {
+
+.about-hd{display: block;}
+.about-hd h2{margin-bottom: 20px;}
+.about-pages {padding: 120px 0px 40px 0px;}
+.expect-text h4 {
+    letter-spacing: -0.72px; }
+
 
 
 
@@ -146,7 +158,7 @@
 .category-box2 p{text-align: left;}
 .category-item{border-right: 0px;}
 .homebanner {background-image: url(../images/Home-banner2.svg); height: 680px;padding: 160px 0px;}
-.home-hd {display: flex;flex-direction: column;justify-content: center;gap: 280px;}
+.home-hd {display: flex;flex-direction: column;justify-content: center;gap: 260px;}
 .home-hd h1 {font-size: 34px;font-weight: 300;letter-spacing: -1.02px;}
 .realized-hd h2 {font-size: 34px;letter-spacing: -1.02px;}
 .precision-text h3{font-size: 16px;letter-spacing: -0.48px;}
@@ -156,7 +168,7 @@
 .products-section h3 {font-size: 34px;letter-spacing: -1.02px;}
 .product-werap h5 {max-width: 230px;margin: 0 auto 6px;}
 .product-werap p{font-size: 14px;letter-spacing: -0.42px;}
-.shop-btn .btn {padding: 18px 30px; font-size: 12px;}
+.shop-btn .btn {padding: 10px 20px; font-size: 14px;}
 .controlarrow .prev {left: 5%;}
 .controlarrow .next {right: 5%;}
 
@@ -179,6 +191,31 @@
 .mobilesilder .owl-next:before {bottom: auto;top: 43%;left: auto;}
 .mobilesilder .owl-prev:before{bottom: auto;top: 43%; right: auto;}
 .follow-wrapper {padding: 40px 0px 40px 0px;}
+
+.hero-section {background: url(../images/hydration-banner2.svg); display: flex; align-items: end; height: 450px;}
+.bottom-text{top: 30%;}
+
+.about-layer {grid-template-columns: repeat(1, 1fr);}
+
+.expect-text h4{font-size: 24px;font-weight: 400;line-height:30px; margin: 0 auto 40px; max-width: 319px;}
+.expect-text h6{font-size: 14px;font-weight: 400;line-height: 140%;letter-spacing: -0.42px;}
+.expect-section::after{height: 250px; width: 250px;}
+.expect-section{padding: 60px 0px 80px 0px;}
+.expect-section .owl-prev:before{display: none;}
+.expect-section .owl-next:before{display: none;}
+.expect-section .owl-dots{opacity: 1;}
+
+
+.about-hd p{font-size: 14px;letter-spacing: -0.42px;}
+.shower-banner{background-image: url('../images/about/shower-bathroom2.svg'); background-position: center; background-size: cover; height: 550px;}
+.shower-banner img{display: none;}
+
+.vision-section h4{letter-spacing: -1.02px; font-size: 34px;}
+.our-hd p{font-size: 14px;letter-spacing: -0.42px;}
+.about-text h2{letter-spacing: -1.02px; font-size: 34px;}
+.about-text p{font-size: 14px;letter-spacing: -0.42px;}
+.about-text{text-align: center; margin-bottom: 40px;}
+.about-layer .about-images {display: none;}
 
 
 
