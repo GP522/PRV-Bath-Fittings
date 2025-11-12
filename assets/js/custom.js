@@ -11,13 +11,13 @@
 
 
 $(window).on('scroll', function (event) {
-    var scrollValue = $(window).scrollTop();
-    if (scrollValue > 200) {
-      $('#header').addClass('fixed');
-    } else {
-      $('#header').removeClass('fixed');
-    }
-  });
+  var scrollValue = $(window).scrollTop();
+  if (scrollValue > 200) {
+    $('#header').addClass('fixed');
+  } else {
+    $('#header').removeClass('fixed');
+  }
+});
 
 
 
@@ -32,8 +32,8 @@ $(window).on('scroll', function (event) {
 
 
 //========home page=========
-var slider1 = $('.slider1');
-slider1.owlCarousel({
+var followslider = $('.followslider');
+followslider.owlCarousel({
   loop: true,
   nav: true,
   dots: false,
@@ -56,8 +56,8 @@ slider1.owlCarousel({
 
 
 
-var slider2 = $('.slider2');
-slider2.owlCarousel({
+var expectslider = $('.expectslider');
+expectslider.owlCarousel({
   loop: true,
   nav: true,
   dots: true,
@@ -66,18 +66,18 @@ slider2.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 1},
-    1200: { items: 1}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 1 },
+    1200: { items: 1 }
 
   }
 });
 
 
-var slider3 = $('.slider3');
-slider3.owlCarousel({
+var blogslider = $('.blogslider');
+blogslider.owlCarousel({
   loop: true,
   nav: true,
   dots: false,
@@ -86,19 +86,19 @@ slider3.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 2},
-    1200: { items: 3.2}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 2 },
+    1200: { items: 3.2 }
 
   }
 });
 
 
 
-var slider4 = $('.slider4');
-slider4.owlCarousel({
+var modalslider = $('.modalslider');
+modalslider.owlCarousel({
   loop: true,
   nav: true,
   dots: true,
@@ -107,17 +107,17 @@ slider4.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 1},
-    1200: { items: 1}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 1 },
+    1200: { items: 1 }
 
   }
 });
 
-var slider6 = $('.slider6');
-slider6.owlCarousel({
+var aboutslider = $('.aboutslider');
+aboutslider.owlCarousel({
   loop: true,
   nav: false,
   dots: false,
@@ -126,11 +126,11 @@ slider6.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1.2},
-    480: { items: 1.2},
-    600: { items: 1.2},
-    960: { items: 1.2},
-    1200: { items: 1.2}
+    320: { items: 1.2 },
+    480: { items: 1.2 },
+    600: { items: 1.2 },
+    960: { items: 1.2 },
+    1200: { items: 1.2 }
 
   }
 });
