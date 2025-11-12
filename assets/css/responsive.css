@@ -209,6 +209,8 @@
 .about-hd p{font-size: 14px;letter-spacing: -0.42px;}
 .shower-banner{background-image: url('../images/about/shower-bathroom2.svg'); background-position: center; background-size: cover; height: 550px;}
 .shower-banner img{display: none;}
+.prvslider{display: block;}
+
 
 .vision-section h4{letter-spacing: -1.02px; font-size: 34px;}
 .our-hd p{font-size: 14px;letter-spacing: -0.42px;}
