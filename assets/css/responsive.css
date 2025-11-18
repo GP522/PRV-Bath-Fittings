@@ -113,7 +113,8 @@
 .about-prv{padding: 40px 0px;}
 
 .about-layer {grid-template-columns: repeat(2, 1fr);}
-
+.product-grid {grid-template-columns: repeat(2, 1fr);}
+.postgrid {grid-template-columns: repeat(2, 1fr);}
 
 
 
@@ -130,10 +131,9 @@
 .about-hd{display: block;}
 .about-hd h2{margin-bottom: 20px;}
 .about-pages {padding: 120px 0px 40px 0px;}
-.expect-text h4 {
-    letter-spacing: -0.72px; }
-
-
+.expect-text h4 {letter-spacing: -0.72px; }
+.shower-section{padding: 40px 0px;}
+.explore-section{padding: 40px 0px;}
 
 
 }
@@ -176,7 +176,7 @@
 .intro-heading h1 {font-size: 55px;line-height: 51px;letter-spacing: -1.65px;}
 .intro-heading h1 span{font-size: 55px;}
 .intro-heading p{font-size: 14px;letter-spacing: -0.42px;}
-.enqure-btn .btn{padding: 18px 30px; width: 100%; font-weight: 12px;}
+.enqure-btn .btn{padding: 14px 30px; width: 100%; font-size: 12px;}
 .follow-wrapper h4{font-size: 24px;letter-spacing: -0.72px;}
 
 .brand-logo {float: inherit;text-align: center; margin-bottom: 50%; position: relative;}
@@ -216,10 +216,20 @@
 .about-layer .about-images {display: none;}
 
 
+.category-pages {background-image: url(../images/category/category-banner2.svg); height: 450px; padding: 60px 0px 20px 0px;}
+.shower-section h3{font-size: 35px;font-weight: 400;line-height: normal;letter-spacing: -1.02px; padding: 0px 20px; margin-bottom: 20px;}
+.product-grid {grid-template-columns: repeat(1, 1fr);}
+.postgrid {grid-template-columns: repeat(1, 1fr);}
+.productwerap{border: 0px; padding: 0px;}
+.product-card{border-bottom: 1px solid #CDC8C1; padding: 0px 20px;}
+.product-info h4{font-size: 16px;line-height: normal;letter-spacing: -0.48px; margin-bottom: 0px;}
+.product-info p{font-size: 14px;letter-spacing: -0.42px; margin-bottom: 20px;}
+.custom-tabs{padding: 0px 20px; margin-bottom: 10px; display: none;}
+.filter-container{display: block;}
+.shower-section .container{padding: 0px;}
+.shower-section .enqure-btn.mobile{padding: 0px 20px;}
 
-
-
-
+.explore-section h3{font-size: 35px;font-weight: 400;line-height: normal;letter-spacing: -1.02px; margin-bottom: 30px;}
 
 }
 @media (max-width:480.8px) {
@@ -239,7 +249,8 @@
 
 
 @media (max-width:390.8px) {
-
+.intro-heading h1{font-size: 50px; line-height: 45px;}
+.intro-heading h1 span{font-size: 50px;}
 
 
 }
@@ -249,8 +260,7 @@
 @media (max-width:340.8px) {
  .follow-wrapper h4 {font-size: 20px;}
 .follow-card{padding: 0px 30px;}
-.intro-heading h1{font-size: 50px; line-height: 45px;}
-.intro-heading h1 span{font-size: 50px;}
+
 
 }
 
