@@ -92,6 +92,18 @@
 
   <div class="product-section">
     <div class="container">
+      <div class="filter-container">
+        <button class="filter-header" aria-expanded="true" aria-controls="filter-list">
+          All
+          <span class="arrow-icon">↓</span>
+        </button>
+        <ul class="filter-list" id="filter-list">
+          <li class="filter-item">Design Deep Dives</li>
+          <li class="filter-item">Product Updates</li>
+          <li class="filter-item">Sustainability &
+            Innovation</li>
+        </ul>
+      </div>
       <div class="custom-tabs">
         <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -179,6 +191,9 @@
               </div>
             </div><!--postwerap-->
 
+          </div>
+          <div class="enqure-btn mobile">
+            <a href="#" class="btn">see more</a>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
@@ -334,6 +349,27 @@
   <script src="./assets/js/owlcarousel/owl.carousel.js"></script>
   <script src="./assets/js/custom.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.filter-header');
+      const list = document.querySelector('.filter-list');
+
+      header.addEventListener('click', () => {
+        // 1. Toggle the 'display' property of the list
+        const isHidden = list.style.display === 'none' || list.style.display === '';
+
+        if (isHidden) {
+          list.style.display = 'block';
+          header.setAttribute('aria-expanded', 'true');
+          header.classList.add('open');
+        } else {
+          list.style.display = 'none';
+          header.setAttribute('aria-expanded', 'false');
+          header.classList.remove('open');
+        }
+      });
+    });
+  </script>
 
 
 </body>

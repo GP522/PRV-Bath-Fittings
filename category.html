@@ -480,28 +480,27 @@
   </script>
 
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.filter-header');
-    const list = document.querySelector('.filter-list');
-    
-    header.addEventListener('click', () => {
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.filter-header');
+      const list = document.querySelector('.filter-list');
+
+      header.addEventListener('click', () => {
         // 1. Toggle the 'display' property of the list
         const isHidden = list.style.display === 'none' || list.style.display === '';
 
         if (isHidden) {
-            list.style.display = 'block';
-            header.setAttribute('aria-expanded', 'true');
-            header.classList.add('open');
+          list.style.display = 'block';
+          header.setAttribute('aria-expanded', 'true');
+          header.classList.add('open');
         } else {
-            list.style.display = 'none';
-            header.setAttribute('aria-expanded', 'false');
-            header.classList.remove('open');
+          list.style.display = 'none';
+          header.setAttribute('aria-expanded', 'false');
+          header.classList.remove('open');
         }
+      });
     });
-});
-</script>
+  </script>
 
 
 </body>
-
 </html>
