@@ -57,7 +57,10 @@
 .home-header.fixed .navicon:before{background: #272524;}
 
 .inner-header img{filter: inherit;}
-.inner-header.home-header .navicon, .navicon:before, .navicon:after{background: #272524;}
+.inner-header .navicon:after{background: #272524;}
+.inner-header .navicon:before{background: #272524;}
+.inner-header .navicon{background: #272524;}
+
 
 .custom-tabs .nav-link{padding: 12px 12px; font-size: 14px;}
 
