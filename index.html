@@ -17,44 +17,96 @@
 <body>
 
 
-  <header id="header" class="home-header">
-    <div class="container">
-      <div class="header-menu">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand mobile" href="index.html">
-            <img src="./assets/images/PVR-logo.svg" alt="">
-          </a>
+ <header id="header" class="home-header">
+  <div class="container">
+    <div class="header-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-          <div class="nav-container collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav navmenu mr-auto">
-              <li class="nav-item"><a href="#" class="active">Home</a></li>
-              <li class="nav-item"><a href="#">Baths & Kitchen</a></li>
-              <li class="nav-item"><a href="#">Allied items</a></li>
-              <li class="nav-item"><a href="about.html">About</a></li>
+        <a class="navbar-brand mobile" href="index.html">
+          <img src="./assets/images/PVR-logo.svg" alt="">
+        </a>
 
-              <li class="pvrlogo desktop"><a href="index.html"><img src="./assets/images/PVR-logo.svg" alt=""></a></li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <div class="menu-icon">
+            <span class="navicon"></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse nav-container" id="collapsibleNavbar">
+
+          <ul class="navbar-nav navmenu mr-auto">
+            <li class="nav-item"><a href="#" class="active">Home</a></li>
+
+            <!--mobile menu-->
+
+             <li class="nav-item mobile"><a href="#"><span> Bathroom </span>
+                  <i class="fas fa-angle-down toggle-dropdown rotate"></i></a>
+                <ul class="dropdown">
+                 <li><a href="#">Faucets</a></li>
+              <li><a href="#">Showers</a></li>
+              <li><a href="#">Health Faucets</a></li>
+              <li><a href="#">Bathroom Accessories</a></li>
+              <li><a href="#">Toilet Accessories</a></li>
+              <li><a href="#">Plumbing Accessories</a></li>
+                </ul>
+              </li>
+
+            <!-- DROPDOWN TRIGGER -->
+            <li class="nav-item dropdown-link">
+              <a href="#" class="dropdown-btn">
+                Bathroom <i class="fas fa-angle-down icon-arrow"></i>
+              </a>
+            </li>
+
+            <li class="nav-item"><a href="#">Kitchen</a></li>
+
+
+            <li class="nav-item"><a href="about.html">About</a></li>
+
+            <li class="pvrlogo desktop"><a href="index.html"><img src="./assets/images/PVR-logo.svg" alt=""></a></li>
+          </ul>
+
+          <div class="contact-button">
+            <a href="#" class="btn">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Bathroom -->
+    <div class="dropdownmenu" id="dropdown-bathroom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7">
+            <ul class="megamenu">
+              <li><a href="#"><span><img src="./assets/images/icon/Faucets.svg"></span>Faucets</a></li>
+              <li><a href="#"><span><img src="./assets/images/icon/Showers.svg"></span>Showers</a></li>
+              <li><a href="#"><span><img src="./assets/images/icon/Health.svg"></span>Health Faucets</a></li>
+              <li><a href="#"><span><img src="./assets/images/icon/Bathroom.svg"></span>Bathroom Accessories</a></li>
+              <li><a href="#"><span><img src="./assets/images/icon/Toilet.svg"></span>Toilet Accessories</a></li>
+              <li><a href="#"><span><img src="./assets/images/icon/Plumbing.svg"></span>Plumbing Accessories</a></li>
             </ul>
+          </div>
 
-
-            <div class="contact-button">
-              <a href="#" class="btn">Contact</a>
+          <div class="col-md-5">
+            <div class="explore-werp">
+              <img src="./assets/images/icon/Explore.svg" alt="">
+              <div class="explore">
+                <a href="#">Explore Kitchen collection
+                  <img src="./assets/images/icon/right-arrow.svg" alt="">
+                </a>
+              </div>
             </div>
           </div>
 
-
-
-          <div class="naviconmobile">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <div class="menu-icon">
-                <span class="navicon"></span>
-              </div>
-            </button>
-          </div>
-        </nav>
-
+        </div>
       </div>
     </div>
-  </header><!----home-header-->
+
+  </div>
+</header>
+<!----home-header-->
 
 
   <div class="homebanner">

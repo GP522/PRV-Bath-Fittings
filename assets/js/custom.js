@@ -1,8 +1,61 @@
 !function (a) { a.fn.isOnScreen = function (b) { var c = this.outerHeight(), d = this.outerWidth(); if (!d || !c) return !1; var e = a(window), f = { top: e.scrollTop(), left: e.scrollLeft() }; f.right = f.left + e.width(), f.bottom = f.top + e.height(); var g = this.offset(); g.right = g.left + d, g.bottom = g.top + c; var h = { top: f.bottom - g.top, left: f.right - g.left, bottom: g.bottom - f.top, right: g.right - f.left }; return "function" == typeof b ? b.call(this, h) : h.top > 0 && h.left > 0 && h.right > 0 && h.bottom > 0 } }(jQuery);
 
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.nav-item');
+
+    dropdowns.forEach((item) => {
+      const toggle = item.querySelector('.toggle-dropdown');
+      const submenu = item.querySelector('.dropdown');
+
+      if (toggle && submenu) {
+        toggle.addEventListener('click', (e) => {
+          if (window.innerWidth < 769) {
+            e.preventDefault();
+            item.classList.toggle('open');
+
+            // Toggle icon + / âˆ’
+            if (item.classList.contains('open')) {
+              toggle.classList.add('open');
+            } else {
+              toggle.classList.remove('open');
+            }
+
+            // Close other open dropdowns (optional)
+            dropdowns.forEach((other) => {
+              if (other !== item) {
+                other.classList.remove('open');
+                const otherIcon = other.querySelector('.toggle-dropdown');
+                if (otherIcon) otherIcon.classList.remove('open');
+              }
+            });
+          }
+        });
+      }
+    });
+  });
 
 
+document.addEventListener("DOMContentLoaded", function () {
 
+  const dropdownBtn = document.querySelector(".dropdown-btn");
+  const dropdownMenu = document.querySelector(".dropdownmenu");
+  const arrowIcon = document.querySelector(".icon-arrow");
+
+  // TOGGLE
+  dropdownBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenu.classList.toggle("open");
+    arrowIcon.classList.toggle("active");
+  });
+
+  // CLOSE ON CLICK OUTSIDE
+  document.addEventListener("click", function (e) {
+    if (!dropdownMenu.contains(e.target) && !dropdownBtn.contains(e.target)) {
+      dropdownMenu.classList.remove("open");
+      arrowIcon.classList.remove("active");
+    }
+  });
+});
 
 
 

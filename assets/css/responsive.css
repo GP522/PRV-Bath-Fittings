@@ -5,8 +5,8 @@
 
 
 @media (max-width:1460.8px) {
-
-
+.megamenu li a{line-height: 60px;}
+.megamenu{top: -20px;}
 
 }
 @media (max-width:1390.8px) {
@@ -40,6 +40,11 @@
 
 
 @media (max-width:991.8px) {
+  .dropdown-link{display: none;}
+  .dropdownmenu.open{display: none;}
+    li.nav-item.open {margin-bottom: 0px;}
+  .navmenu .dropdown li{margin-bottom:15px;}
+  .navmenu .dropdown li a{font-size:14px;}
 .navbar-toggler{top: 0px; right: 15px;}
 .navbar-collapse {position: absolute;top: 100%;width: 100%;left: 0px;z-index: 9999;border-radius:21px;background:#C3E2D9; padding: 30px 30px; margin-top:12px;}
 .navmenu .nav-item a {font-size: 18px;padding: 0px 0px;}
