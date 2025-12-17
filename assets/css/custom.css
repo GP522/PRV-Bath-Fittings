@@ -160,7 +160,7 @@ a{text-decoration: none;}
 
 /*===precision-section======*/
 .precision-section{position: relative; padding: 100px 0px; background: #272524; overflow: hidden;}
-.realized-hd h2{color:#C3E2D9;text-align: center;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px;}
+.realized-hd h2{color:#C3E2D9;text-align: center;font-family: "Beaufort Pro";font-size: 50px;font-weight: 200;line-height: normal;letter-spacing: -1.5px;}
 
 .crafted-container {display: grid;grid-template-columns: 2fr 1.2fr;align-items: center;gap: 40px; margin: 90px 0px 120px 0px;}
 .crafted-left {display: flex;flex-direction: column;justify-content: flex-end;}
@@ -492,7 +492,7 @@ text-transform: uppercase;}
 .shower-section h3{color:#272524;font-family: "Beaufort Pro";font-size: 75px;font-weight: 400;line-height: normal;letter-spacing: -2.25px; margin-bottom: 30px;}
 .product-grid {display: grid;grid-template-columns: repeat(3 ,1fr);gap: 25px;}
 .product-card {position: relative;overflow: hidden;transition: box-shadow 0.3s ease;}
-.productwerap{border: 1px solid #CDC8C1;background: #FDFDFD; padding: 20px 40px; text-align: center; margin-bottom: 30px;}
+.productwerap{border: 1px solid #CDC8C1;background: #FDFDFD; padding: 20px 40px; text-align: center; margin-bottom: 30px; height: 400px; position: relative; overflow: hidden;}
 .color-dots{text-align: center;}
 .dot {width:20px;height:20px;border-radius: 50%;display: inline-block; margin: 0px 5px;cursor: pointer; text-decoration: none;}
 .dot.gold {background: #F0CF87;}
@@ -503,6 +503,8 @@ text-transform: uppercase;}
 .price{display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;}
 .productimg span {opacity: 0;transition: opacity 0.3s ease-in-out; cursor: pointer;}
 .productimg span.show {opacity: 1;}
+
+.productimg img{width: 100%; height: 100%;}
 
 .explore-section{background: #F5F5F5; padding: 100px 0px; position: relative; overflow: hidden;}
 .explore-section h3{color:#272524;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px; margin-bottom: 40px;}
