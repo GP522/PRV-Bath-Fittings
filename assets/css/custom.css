@@ -449,7 +449,7 @@ text-transform: uppercase;}
 .suggested-section h4{color:#272524;font-size: 18px;font-weight: 500;line-height: normal;letter-spacing: -0.54px;text-transform: uppercase; margin-bottom: 50px;}
 .postgrid{display: grid; grid-template-columns: repeat(3 ,1fr); gap: 40px 20px;}
 .postwerap{position: relative; overflow: hidden;}
-.postimg{position: relative;margin-bottom: 20px;height: 400px;overflow: hidden;display: flex;align-items: center;justify-content: center;background: #fff;}
+.postimg{position: relative;margin-bottom: 20px;overflow: hidden;display: flex;align-items: center;justify-content: center;}
 .postimg img{width: 100%; height: 100%; overflow: hidden;}
 
 
@@ -509,6 +509,13 @@ text-transform: uppercase;}
 .explore-section{background: #F5F5F5; padding: 100px 0px; position: relative; overflow: hidden;}
 .explore-section h3{color:#272524;font-family: "Beaufort Pro";font-size: 50px;font-weight: 400;line-height: normal;letter-spacing: -1.5px; margin-bottom: 40px;}
 .explorecard h5{color:#272524;font-size: 18px;font-weight: 400;line-height: normal;letter-spacing: -0.54px;text-transform: uppercase;}
+.explorecard {position: relative;overflow: hidden;}
+
+.explorecard .postimg{height: 400px;background: #fff;}
+
+
+
+
 
 
 /* productmodal */
